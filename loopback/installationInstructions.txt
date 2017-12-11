@@ -1,3 +1,6 @@
+Important Note: 
+Please install node 8.9.1 version. the current versions of 8.9.3 and 9.2.1 have serious bugs with loopback. older versions work fine. 
+tried and tested, hence alerting you!!!
 
 Install Win64OpenSSL
 https://slproweb.com/download/Win64OpenSSL-1_0_2m.exe
