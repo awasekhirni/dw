@@ -1,0 +1,23 @@
+
+Install Win64OpenSSL
+https://slproweb.com/download/Win64OpenSSL-1_0_2m.exe
+
+1. First of all you need to install all the prerequisites if you don't have them:
+Git for Windows    https://git-scm.com/download
+Python v2.6 or 2.7 (not 3.0+)    https://www.python.org/downloads/
+Microsoft Visual Studio 2013 (Express version is OK). I currently have VS 2015 but I've made it work only with VS 2013 (I also tried 2012).    https://www.microsoft.com/en-US/download/details.aspx?id=44914
+Node.js    https://nodejs.org/en/
+2. Reinstall npm in CMD (I also opened it as admin just in case):
+npm install -g npm
+ 
+3. Install  node-gyp:
+npm install -g node-gyp
+
+4. Install buffertools (you should use --msvs_version=2013 to make it compile with 2013 tools):
+npm install -g buffertools --msvs_version=2013
+
+5. Finally  install strongloop (during instalation some warnings and errors can occur ):
+npm install -g strongloop --msvs_version=2013
+npm install -g --ignore-scripts strongloop
+
+6. Create a project    http://loopback.io/getting-started/
